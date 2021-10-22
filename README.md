@@ -52,3 +52,19 @@ Morty Schapiro and Annabel Miller
 SELECT * FROM interview
 	WHERE person_id IN (14887,16371)
 ```
+
+
+2 and 3. In one Querry:
+
+OK it's not the best looking querry but I'd like to give it a shot 
+```sql
+SELECT *, MAX(address_number)
+  FROM person JOIN interview ON person.id = interview.person_id
+  	WHERE address_street_name = 'Northwestern Dr' 
+	UNION 
+	  SELECT *, MAX(address_number) FROM person 
+	  JOIN interview ON person.id = interview.person_id
+	     WHERE (name LIKE 'Annabel%' AND address_street_name = 'Franklin Ave') 
+```		 	
+		 
+	
