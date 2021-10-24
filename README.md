@@ -89,13 +89,13 @@ SELECT * FROM get_fit_now_check_in x
 		WHERE membership_id LIKE '48Z%' 
 			AND check_in_date = 20180109 
 				AND plate_number LIKE '%H42W%'
-```	
+```
 
 
 ![image](https://github.com/orkunaran/sql_murder_mystery/blob/main/pics/4.png)
 
 
-	"Congrats, you found the murderer! But wait, there's more... If you think you're up for a challenge, try querying the interview transcript of the murderer to find the real villain behind this crime. If you feel especially confident in your SQL skills, try to complete this final step with no more than 2 queries. Use this same INSERT statement with your new suspect to check your answer"
+	Congrats, you found the murderer! But wait, there's more... If you think you're up for a challenge, try querying the interview transcript of the murderer to find the real villain behind this crime. If you feel especially confident in your SQL skills, try to complete this final step with no more than 2 queries. Use this same INSERT statement with your new suspect to check your answer"
 	
 	
 	
