@@ -52,11 +52,13 @@ Morty Schapiro and Annabel Miller
 SELECT * FROM interview
 	WHERE person_id IN (14887,16371)
 ```
+A gold member of Gym with number  started with "48Z". Also he/she got 'H42W' somewhere in his/her car plate. We also know that the murderer was at the gym at $9^th$
 
 
 2 and 3. In one Querry:
 
 OK it's not the best looking querry but I'd like to give it a shot 
+
 ```sql
 SELECT *, MAX(address_number)
   FROM person JOIN interview ON person.id = interview.person_id
@@ -64,7 +66,21 @@ SELECT *, MAX(address_number)
 	UNION 
 	  SELECT *, MAX(address_number) FROM person 
 	  JOIN interview ON person.id = interview.person_id
-	     WHERE (name LIKE 'Annabel%' AND address_street_name = 'Franklin Ave') 
-```		 	
-		 
-	
+	     WHERE (name LIKE 'Annabel%' AND address_street_name = 'Franklin Ave')
+
+```
+
+
+
+4. Let's find the murderer suspect
+```sql
+SELECT * FROM get_fit_now_check_in x
+	JOIN get_fit_now_member y
+	ON x.membership_id= y.id 
+	JOIN person z ON z.id = y.person_id 
+	JOIN drivers_license dl ON dl.id = z.license_id
+		WHERE membership_id LIKE '48Z%' 
+			AND check_in_date = 20180109 
+				AND plate_number LIKE '%H42W%'
+```	
+
