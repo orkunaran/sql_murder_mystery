@@ -75,7 +75,7 @@ SELECT *, MAX(address_number)
 	     WHERE (name LIKE 'Annabel%' AND address_street_name = 'Franklin Ave')
 
 ```
-![image](https://github.com/orkunaran/sql_murder_mystery/blob/main/pics/2-3 together.png)
+![image](https://github.com/orkunaran/sql_murder_mystery/blob/main/pics/2-3together.png)
 
 
 
