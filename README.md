@@ -23,6 +23,8 @@ A crime has taken place and the detective needs your help. The detective gave yo
 
 Which Returns: 
 
+![image](https://github.com/orkunaran/sql_murder_mystery/blob/main/pics/1.png)
+
 The first witness lives at the last house on "Northwestern Dr". 
 
 The second witness, named Annabel, lives somewhere on "Franklin Ave".
@@ -42,6 +44,7 @@ SELECT *, MAX(address_number)
 
 Which returns :
 
+![image](https://github.com/orkunaran/sql_murder_mystery/blob/main/pics/2.png)
 
 Morty Schapiro and Annabel Miller
 
@@ -53,6 +56,9 @@ SELECT * FROM interview
 	WHERE person_id IN (14887,16371)
 ```
 A gold member of Gym with number  started with "48Z". Also he/she got 'H42W' somewhere in his/her car plate. We also know that the murderer was at the gym at $9^th$
+
+
+![image](https://github.com/orkunaran/sql_murder_mystery/blob/main/pics/3.png)
 
 
 2 and 3. In one Querry:
@@ -69,6 +75,7 @@ SELECT *, MAX(address_number)
 	     WHERE (name LIKE 'Annabel%' AND address_street_name = 'Franklin Ave')
 
 ```
+![image](https://github.com/orkunaran/sql_murder_mystery/blob/main/pics/2-3 together.png)
 
 
 
@@ -82,8 +89,14 @@ SELECT * FROM get_fit_now_check_in x
 		WHERE membership_id LIKE '48Z%' 
 			AND check_in_date = 20180109 
 				AND plate_number LIKE '%H42W%'
-```	
+```
 
-	"Congrats, you found the murderer! But wait, there's more... If you think you're up for a challenge, try querying the interview transcript of the murderer to find the real villain behind this crime. If you feel especially confident in your SQL skills, try to complete this final step with no more than 2 queries. Use this same INSERT statement with your new suspect to check your answer"
+
+![image](https://github.com/orkunaran/sql_murder_mystery/blob/main/pics/4.png)
+
+
+	Congrats, you found the murderer! But wait, there's more... If you think you're up for a challenge, try querying the interview transcript of the murderer to find the real villain behind this crime. If you feel especially confident in your SQL skills, try to complete this final step with no more than 2 queries. Use this same INSERT statement with your new suspect to check your answer"
+	
+	
 	
 More Challenges: Let's find the victim:
